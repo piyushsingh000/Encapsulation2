@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+
+class Student {
+    private :
+    string Name;
+    int rollno ;
+    int age ;
+    
+    public:
+    string getName(){
+        return Name;
+    }
+    void setName(string name){
+         this -> Name = name ; 
+    }
+    
+     int getrollno(){
+        return rollno ;
+    }
+ void setrollno(int s){
+         this -> rollno = s ; 
+    }
+    
+    
+     int getage(){
+        return age ;
+    }
+ void setage(int a){
+         this -> age = a ; 
+    }
+};
+
+
+
+int main ( ) {
+    Student Baccho ;
+    Baccho.setName("Danish Bhai");
+    Baccho.setrollno(15);
+    Baccho.setage(21);
+    cout<<Baccho.getName()<<endl ;
+    cout<<Baccho.getrollno()<<endl ;
+    cout<<Baccho.getage()<<endl ;
+    
+}
